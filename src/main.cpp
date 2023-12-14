@@ -1,8 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
+
+void vegas(void);
 
 int main()
 {
-    printf("Hello world !\n");
+    int a;
+
+    a = 365;
+    printf("Dans le fonction main(), a=%d\n", a);
+    vegas();
+    printf("De retour dans main(), a=%d\n", a);
     return 0;
+}
+
+void vegas(void)
+{
+    int a;
+
+    a = -10;
+    printf("Dans la fonction vegas(), a=%d\n", a);
 }
