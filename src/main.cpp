@@ -1,8 +1,29 @@
 #include <stdio.h>
-#include <stdlib.h>
+
+void graph(int cmptr);
 
 int main()
 {
-    printf("Hello world !\n");
+    int valeur;
+
+    valeur=2;
+
+    while(valeur<=64)
+    {
+        graph(valeur);
+        printf("La valeur est %d\n", valeur);
+        valeur = valeur*2;
+    }
     return 0;
+}
+
+void graph(int cmptr)
+{
+    int x;
+
+    for(x=0; x<cmptr; x++)
+    {
+        putchar('*');
+    }
+    putchar('\n');
 }
